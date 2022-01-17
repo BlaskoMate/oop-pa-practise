@@ -1,0 +1,27 @@
+Store
+-monthly revenue
+-product list
+-currently rented list
+- rentProduct(customerId, days, product.price()) { monthlyRevenue++, product.isRented(true) }
+
+
+abstract Product:
+-type: Movie, TVShow, Music, VideoGame
+-title
+-release date
+-daily rental cost
+-original retail price
+-max days for rental = 14
+-isAvailable
+-isFavorite
+
+Movie / TVShow:
+-release < 2000 -> VHS
+- 2000 - 2010 -> DVD
+- release > 2010 -> Blu-ray
+
+Music:
+-CD
+
+VideoGame:
+-DVD
